@@ -8,7 +8,9 @@ export default function Header() {
         <>
             <header className="headerContainer">
                 <div className="menu_container">
-                    <img src={!menuState ? "src/images/Menu.svg" : "src/images/menu_aberto.svg"} alt="Menu" onClick={() => setMenuState(!menuState)} className={ menuState ? 'menuChecked' : ''}/>
+                    <div className={`hamburger_container ${menuState && 'hamburger_container_checked'}`}>
+                        <img src={!menuState ? "src/images/Menu.svg" : "src/images/menu_aberto.svg"} alt="Menu" onClick={() => setMenuState(!menuState)} className={ menuState ? 'menuChecked' : ''}/>
+                    </div>
                     {
                         menuState ? (
                             <ul className="menuOptionsContainer">

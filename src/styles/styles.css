@@ -63,16 +63,15 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
   position: relative;
   background-color: white;
+  height: 60px;
 }
 .headerContainer .menu_container {
   display: flex;
   align-items: center;
 }
 .headerContainer .menu_container .menuChecked {
-  background: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
   transform: scaleX(-1);
 }
 .headerContainer .menu_container .menuOptionsContainer {
@@ -96,11 +95,21 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
 }
+.headerContainer .menu_container .hamburger_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+  margin-right: 10px;
+}
+.headerContainer .menu_container .hamburger_container_checked {
+  background: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+}
 .headerContainer .menu_container img {
   width: 30px;
   height: 30px;
   padding: 0.2em;
-  margin-right: 10px;
   transition: transform 0.5s ease;
 }
 .headerContainer .icons_container {

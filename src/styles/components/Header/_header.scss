@@ -4,16 +4,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
     position: relative;
     background-color: variables.$white;
+    height: 60px;
   
     .menu_container {
       display: flex;
       align-items: center;
       
       .menuChecked {
-        background: variables.$gradient-blue;
         transform: scaleX(-1);
       }
 
@@ -39,11 +38,23 @@
         }
       }
 
+      .hamburger_container {  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        width: 60px;
+        margin-right: 10px;
+      }
+
+      .hamburger_container_checked {
+        background: variables.$gradient-blue;
+      }
+
       img {
         width: 30px;
         height: 30px;
         padding: 0.2em;
-        margin-right: 10px;
         transition: transform 0.5s ease;
       }
     }
