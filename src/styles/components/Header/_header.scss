@@ -1,0 +1,64 @@
+@use '../../abstract/variables';
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    background-color: variables.$white;
+  
+    .menu_container {
+      display: flex;
+      align-items: center;
+      
+      .menuChecked {
+        background: variables.$gradient-blue;
+        transform: scaleX(-1);
+      }
+
+      .menuOptionsContainer {
+        position: absolute;
+        top: 100%;
+        width: 60vw;
+        background-color: variables.$white;
+        .categories_title {
+            color: variables.$orange;
+            font-weight: 700;
+            padding: 24px 24px 8px 24px;
+        }
+        .categories_item {
+            padding: 24px 24px 16px 24px;
+            .categories_link {
+                text-decoration: none;
+                background: variables.$gradient-blue;
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+            }
+        }
+      }
+
+      img {
+        width: 30px;
+        height: 30px;
+        padding: 0.2em;
+        margin-right: 10px;
+        transition: transform 0.5s ease;
+      }
+    }
+  
+    .icons_container {
+      display: flex;
+      align-items: center;
+  
+      a {
+        margin-right: 10px;
+  
+        img {
+          width: 35px;
+          height: auto;
+        }
+      }
+    }
+  }

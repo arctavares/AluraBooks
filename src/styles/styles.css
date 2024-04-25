@@ -1,0 +1,116 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #EBECEE;
+  font-family: "Poppins sans-serif";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+  background-color: white;
+}
+.headerContainer .menu_container {
+  display: flex;
+  align-items: center;
+}
+.headerContainer .menu_container .menuChecked {
+  background: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+  transform: scaleX(-1);
+}
+.headerContainer .menu_container .menuOptionsContainer {
+  position: absolute;
+  top: 100%;
+  width: 60vw;
+  background-color: white;
+}
+.headerContainer .menu_container .menuOptionsContainer .categories_title {
+  color: rgb(235, 155, 0);
+  font-weight: 700;
+  padding: 24px 24px 8px 24px;
+}
+.headerContainer .menu_container .menuOptionsContainer .categories_item {
+  padding: 24px 24px 16px 24px;
+}
+.headerContainer .menu_container .menuOptionsContainer .categories_item .categories_link {
+  text-decoration: none;
+  background: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.headerContainer .menu_container img {
+  width: 30px;
+  height: 30px;
+  padding: 0.2em;
+  margin-right: 10px;
+  transition: transform 0.5s ease;
+}
+.headerContainer .icons_container {
+  display: flex;
+  align-items: center;
+}
+.headerContainer .icons_container a {
+  margin-right: 10px;
+}
+.headerContainer .icons_container a img {
+  width: 35px;
+  height: auto;
+}/*# sourceMappingURL=styles.css.map */
