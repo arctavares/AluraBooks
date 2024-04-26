@@ -122,4 +122,50 @@ body {
 .headerContainer .icons_container a img {
   width: 35px;
   height: auto;
+}
+
+.bannerContainer {
+  background: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em;
+}
+.bannerContainer div {
+  margin: 1em;
+}
+.bannerContainer .searchContainer {
+  border: 1px solid white;
+  padding: 1em;
+  border-radius: 50px;
+  width: 80vw;
+  text-align: center;
+}
+.bannerContainer .searchContainer .searchInput {
+  all: unset;
+  width: 100%;
+}
+.bannerContainer .searchContainer .searchInput::-moz-placeholder {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  background: url("../../../images/Lupa.svg");
+  background-position: 1em;
+}
+.bannerContainer .searchContainer .searchInput::placeholder {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  background: url("../../../images/Lupa.svg");
+  background-position: 1em;
+}
+.bannerContainer .bannerTitle {
+  font-weight: 700;
+  font-size: 18px;
+}
+.bannerContainer .bannerText {
+  text-align: center;
+  width: 70%;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,45 @@
+@use '../../abstract/variables';
+
+.bannerContainer {
+    background: variables.$gradient-blue;
+    color: variables.$white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+
+    & div {
+        margin: 1em;
+    }
+
+    .searchContainer {
+        border: 1px solid variables.$white;
+        padding: 1em;
+        border-radius: 50px;
+        width: 80vw;
+        display: flex;
+        .searchInput {
+            all: unset;
+            width: 100%;
+            &::placeholder {
+                color: variables.$white;
+                font-size: 14px;
+                font-weight: 400;
+                background: url('../../../images/Lupa.svg') !important;
+                background-position: 1em;
+                text-align: center;
+            }
+        }
+    }
+    
+    .bannerTitle {
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .bannerText {
+        text-align: center;
+        width: 70%;
+    }
+}
