@@ -3,6 +3,7 @@ import Header from "../../components/Header";
 import Carousel from "../../components/Carousel";
 import { Topics } from "../../components/Topics";
 import Contact from "../../components/Concact";
+import Footer from "../../components/Footer";
 
 export default function HomePage() {
     return (
@@ -33,6 +34,7 @@ export default function HomePage() {
             />
             <Topics />
             <Contact />
+            <Footer />
         </>
     )
 }
