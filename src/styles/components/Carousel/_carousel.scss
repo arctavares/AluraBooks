@@ -1,0 +1,76 @@
+@use '../../abstract/variables';
+
+.mainCarouselContainer {
+    .carouselTitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: variables.$white;
+        height: 50px;
+        color: variables.$orange;
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 1em;
+    }
+    .swiper {
+        .swiperSlide img {
+            width: 100%;
+        }
+    }
+    .cardContainer {
+        display: flex;
+        margin: 20px;
+        padding: 1em;
+        background-color: variables.$white;
+        .cardLeftSide {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            height: 250px;
+            .cardTextContent {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                height: 80%;
+                padding: 0 0.5em;
+                & h2 {
+                    color: variables.$orange;
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+
+                & h1 {
+                    font-size: 18px;
+                    color: variables.$blue;
+                    font-weight: 700;
+                }
+
+                & p {
+                    color: variables.$blue;
+                }
+            }
+            .cardIcons {
+                text-align: center;
+            }
+        }
+        .cardRightSide {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .cardLinkContainer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 20%;
+                background-color: variables.$orange;
+                & a {
+                    text-decoration: none;
+                    color: variables.$white;
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+

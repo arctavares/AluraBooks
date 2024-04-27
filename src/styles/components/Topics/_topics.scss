@@ -1,0 +1,32 @@
+@use '../../abstract/variables';
+
+.topicsContainer {
+    padding: 2em;
+    background:variables.$gradient-blue;
+    padding: 1em 0;
+    .topicsTitle {
+        color: variables.$white;
+        font-weight: 300;
+        font-size: 16px;
+        text-align: center;
+    }
+    .topicsListContainer {
+        .topicsList {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            .topicsItem {
+                margin: 1.5em 0.5em;
+                .topicsLink {
+                    background-color: variables.$orange;
+                    padding: 1em;
+                    text-decoration: none;
+                    font-weight: 700;
+                    color: variables.$white;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
