@@ -1,0 +1,40 @@
+@use '../../abstract/variables';
+
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    background-color: variables.$white;
+    .contactTextContainer {
+        & > * {
+            padding: 0.5em 0;
+        }
+        & > h1 {
+            font-weight: 500;
+            font-size: 18px;
+        }
+        & > h2 {
+            font-size: 16px;
+        }
+    }
+    .inputContainer {
+        border: 1px solid variables.$blue;
+        height: 30px;
+        width: 90%;
+        border-radius: 24px;
+        display: flex;
+        justify-content: center;
+        & > img {
+            margin-right: 1em;
+        }
+        & > input {
+            all:unset;
+            width: 80%;
+            &::placeholder {
+                text-align: center;
+            }
+        }
+
+        
+    }
+}

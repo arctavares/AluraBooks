@@ -2,6 +2,7 @@ import Banner from "../../components/Banner";
 import Header from "../../components/Header";
 import Carousel from "../../components/Carousel";
 import { Topics } from "../../components/Topics";
+import Contact from "../../components/Concact";
 
 export default function HomePage() {
     return (
@@ -31,6 +32,7 @@ export default function HomePage() {
                 }}
             />
             <Topics />
+            <Contact />
         </>
     )
 }
