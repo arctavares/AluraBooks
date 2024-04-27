@@ -1,4 +1,24 @@
 export function Topics() {
+
+    const topicsSubjects = [
+        'Android',
+        'Marketing Digital',
+        'Agile',
+        'Startups',
+        'HTML e CSS',
+        'Python',
+        'Orientação a Objeto',
+        'Java'
+    ]
+
+    function renderTopics() {
+        return topicsSubjects.map((topicSubject) => {
+            return  <li className="topicsItem">
+                        <a href="#" className="topicsLink">{topicSubject}</a>
+                    </li>
+        })
+    }
+
     return (
         <div className="topicsContainer">
             <div className="topicsTitle">
@@ -6,30 +26,7 @@ export function Topics() {
             </div>
             <div className="topicsListContainer">
                 <ul className="topicsList">
-                    <li className="topicsItem">
-                        <a href="#" className="topicsLink">Android</a>
-                    </li>
-                    <li className="topicsItem">
-                        <a href="#" className="topicsLink">Marketing Digital</a>
-                    </li>
-                    <li className="topicsItem">
-                        <a href="#" className="topicsLink">Agile</a>
-                    </li>
-                    <li className="topicsItem">
-                        <a href="#" className="topicsLink">Startups</a>
-                    </li>
-                    <li className="topicsItem">
-                        <a href="#" className="topicsLink">HTML e CSS</a>
-                    </li>
-                    <li className="topicsItem">
-                        <a href="#" className="topicsLink">Python</a>
-                    </li>
-                    <li className="topicsItem">
-                        <a href="#" className="topicsLink">Orientação a Objeto</a>
-                    </li>
-                    <li className="topicsItem">
-                        <a href="#" className="topicsLink">Java</a>
-                    </li>
+                    {renderTopics()}
                 </ul>
             </div>
         </div>
