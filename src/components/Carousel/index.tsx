@@ -1,5 +1,5 @@
-import 'swiper/swiper.min.css'
-import { Swiper, SwiperSlide } from 'swiper/react'
+import 'bootstrap/dist/css/bootstrap.css';
+import { Carousel } from 'react-bootstrap';
 
 interface CarouselProps {
     carouselTitle: string;
@@ -8,21 +8,20 @@ interface CarouselProps {
     title: string;
     text: string;
     img: {
-        src: string,
-        alt: string
-    }
+        src: string;
+        alt: string;
+    };
 }
 
-export default function Carousel(props: CarouselProps) {
-
+export default function CarouselComponent(props: CarouselProps) {
     function renderStars() {
-            return props.stars && (
+        return props.stars && (
             <div className='starsContainer'>
-                {[...Array(5)].map(() => {
-                    return <img src="src/images/Star 5.svg" alt="Start" className='stars'/>
-                })}
+                {[...Array(5)].map((_, index) => (
+                    <img key={index} src="src/images/Star 5.svg" alt="Star" className='stars'/>
+                ))}
             </div>
-        ) 
+        );
     }
 
     return (
@@ -30,34 +29,47 @@ export default function Carousel(props: CarouselProps) {
             <div className='carouselTitle'>
                 <h1>{props.carouselTitle}</h1>
             </div>
-            <div className="swiper">
-                <Swiper
-                    spaceBetween={10}
-                    slidesPerView={3}
-                    pagination={{
-                        el: '.swiper-pagination',
-                        type: 'bullets',
-                    }}
-                >
-                    <SwiperSlide className='swiperSlide'>
-                        <img src="src/images/ApacheKafka.svg" alt="Livro sobre apache kafka e spring boot da alura books" />
-                    </SwiperSlide>
-                    <SwiperSlide className='swiperSlide'>
-                        <img src="src/images/Liderança.svg" alt="Livro sobre liderança em design da alura books" />
-                    </SwiperSlide>
-                    <SwiperSlide className='swiperSlide'>
-                        <img src="src/images/Javascript.svg" alt="Livro sobre javascript assertivo da alurabooks" />
-                    </SwiperSlide>
-                    <SwiperSlide className='swiperSlide'>
-                        <img src="src/images/Guia Front-end.svg" alt="Livro Guia front end" />
-                    </SwiperSlide>
-                    <SwiperSlide className='swiperSlide'>
-                        <img src="src/images/Portugol.svg" alt="Livro sobre portugol" />
-                    </SwiperSlide>
-                    <SwiperSlide className='swiperSlide'>
-                        <img src="src/images/Acessibilidade.svg" alt="livro sobre acessibilidade" />
-                    </SwiperSlide>
-                </Swiper>
+            <div className="carouselContainer">
+                <Carousel interval={null} data-bs-theme="dark">
+                    <Carousel.Item>
+                        <div className="d-flex justify-content-between">
+                            <img
+                                className="d-block w-33 carouselImage"
+                                src="src/images/ApacheKafka.svg"
+                                alt="Livro sobre apache kafka e spring boot da alura books"
+                            />
+                            <img
+                                className="d-block w-33 carouselImage"
+                                src="src/images/Liderança.svg"
+                                alt="Livro sobre liderança em design da alura books"
+                            />
+                            <img
+                                className="d-block w-33 carouselImage"
+                                src="src/images/Javascript.svg"
+                                alt="Livro sobre javascript assertivo da alurabooks"
+                            />
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <div className="d-flex justify-content-between">
+                            <img
+                                className="d-block w-33 carouselImage"
+                                src="src/images/Guia Front-end.svg"
+                                alt="Livro Guia front end"
+                            />
+                            <img
+                                className="d-block w-33 carouselImage"
+                                src="src/images/Portugol.svg"
+                                alt="Livro sobre portugol"
+                            />
+                            <img
+                                className="d-block w-33 carouselImage"
+                                src="src/images/Acessibilidade.svg"
+                                alt="livro sobre acessibilidade"
+                            />
+                        </div>
+                    </Carousel.Item>
+                </Carousel>
             </div>
             <div className='cardContainer'>
                 <div className='cardLeftSide'>

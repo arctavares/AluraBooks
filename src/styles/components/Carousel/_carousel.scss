@@ -12,9 +12,21 @@
         font-size: 18px;
         margin-bottom: 1em;
     }
-    .swiper {
-        .swiperSlide img {
-            width: 100%;
+    .carouselContainer {
+        & > div > .carousel-indicators {
+            top: 0;
+            position: relative;
+            height: 20px;
+            margin-bottom: 10px;
+            & > button {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+
+            }
+        }
+        .carouselImage {
+            width: 33%;
         }
     }
     .cardContainer {
