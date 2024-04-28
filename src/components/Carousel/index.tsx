@@ -29,10 +29,11 @@ export default function CarouselComponent(props: CarouselProps) {
             <div className='carouselTitle'>
                 <h1>{props.carouselTitle}</h1>
             </div>
+            <div className='carouselAndCardContainer'>
             <div className="carouselContainer">
                 <Carousel interval={null} data-bs-theme="dark">
                     <Carousel.Item>
-                        <div className="d-flex justify-content-between">
+                        <div className="d-flex justify-content-between slidesContainer">
                             <img
                                 className="d-block w-33 carouselImage"
                                 src="src/images/ApacheKafka.svg"
@@ -50,8 +51,8 @@ export default function CarouselComponent(props: CarouselProps) {
                             />
                         </div>
                     </Carousel.Item>
-                    <Carousel.Item>
-                        <div className="d-flex justify-content-between">
+                    <Carousel.Item className='carouselItem'>
+                        <div className="d-flex justify-content-between slidesContainer">
                             <img
                                 className="d-block w-33 carouselImage"
                                 src="src/images/Guia Front-end.svg"
@@ -90,6 +91,7 @@ export default function CarouselComponent(props: CarouselProps) {
                         <a href="#">Saiba mais</a>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     );

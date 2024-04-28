@@ -261,6 +261,12 @@ body {
   font-size: 18px;
   margin-bottom: 1em;
 }
+.mainCarouselContainer .carouselAndCardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .mainCarouselContainer .carouselContainer > div > .carousel-indicators {
   top: 0;
   position: relative;
@@ -280,6 +286,10 @@ body {
   margin: 20px;
   padding: 1em;
   background-color: white;
+  border-radius: 10px;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .mainCarouselContainer .cardContainer .cardLeftSide {
   display: flex;
@@ -329,6 +339,37 @@ body {
   font-size: 16px;
 }
 
+@media screen and (min-width: 1024px) {
+  .mainCarouselContainer .carouselAndCardContainer {
+    display: flex;
+    padding: 2em 3em;
+    align-items: center;
+    flex-direction: row;
+  }
+  .mainCarouselContainer .carouselAndCardContainer .carouselContainer {
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+  }
+  .mainCarouselContainer .carouselAndCardContainer .carouselContainer .carousel-item {
+    width: 40vw;
+  }
+  .mainCarouselContainer .carouselAndCardContainer .cardContainer .cardLeftSide .cardIcons {
+    text-align: left;
+  }
+  .mainCarouselContainer .carouselAndCardContainer .cardContainer .cardLeftSide .cardTextContent h2 {
+    font-size: 32px;
+  }
+  .mainCarouselContainer .carouselAndCardContainer .cardContainer .cardLeftSide .cardTextContent h1 {
+    font-size: 18px;
+  }
+  .mainCarouselContainer .carouselAndCardContainer .cardContainer .cardLeftSide .cardTextContent p {
+    font-size: 16px;
+  }
+  .cardContainer {
+    width: auto;
+  }
+}
 .topicsContainer {
   padding: 2em;
   background: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
