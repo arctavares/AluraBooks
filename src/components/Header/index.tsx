@@ -3,6 +3,7 @@ import { useState } from "react";
 export default function Header() {
 
     const [menuState, setMenuState] = useState(false);
+    const [categoriesState, setCategoriesState] = useState(false);
 
     return (
         <>
@@ -13,7 +14,7 @@ export default function Header() {
                     </div>
                     {
                         menuState ? (
-                            <ul className="menuOptionsContainer">
+                        <ul className="menuOptionsContainer">
                             <li className="categories_title">Categorias</li>
                             <li className="categories_item"><a href="#" className="categories_link">PROGRAMAÇÃO</a></li>
                             <li className="categories_item"><a href="#" className="categories_link">FRONTEND</a></li>
@@ -24,7 +25,25 @@ export default function Header() {
                         ) : ''
                     }                   
                     <img src="src/images/Logo.svg" alt="Logo" />
+                    <h1 className="headerTitle"><b>Alura</b>Books</h1>
                 </div>
+                <ul className="options">
+                    <li onClick={() => {setCategoriesState(!categoriesState)}} className={ `optionsItem ${categoriesState ? 'categoryChecked' : ''}`}>CATEGORIAS
+                        {
+                            categoriesState ? (
+                                <ul className="menuOptionsContainer">
+                                <li className="categories_item"><a href="#" className="categories_link">PROGRAMAÇÃO</a></li>
+                                <li className="categories_item"><a href="#" className="categories_link">FRONTEND</a></li>
+                                <li className="categories_item"><a href="#" className="categories_link">INFRAESTRUTURA</a></li>
+                                <li className="categories_item"><a href="#" className="categories_link">BUSINESS</a></li>
+                                <li className="categories_item"><a href="#" className="categories_link">DESIGN & UX</a></li>
+                            </ul>
+                            ) : ''
+                        } 
+                    </li> 
+                    <li className="optionsItem">FAVORITOS</li>
+                    <li className="optionsItem">MINHA ESTANTE</li>
+                </ul>
                 <div className="icons_container">
                     <a href="#"><img src="src/images/Favoritos.svg" alt="Favoritos" /></a>
                     <a href="#"><img src="src/images/Compras.svg" alt="Compras" /></a>
