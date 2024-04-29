@@ -596,6 +596,9 @@ hr {
 .footerContainer .footer_list {
   display: none;
 }
+.footerContainer .footerText {
+  display: none;
+}
 
 @media screen and (min-width: 1024px) {
   .footerContainer {
@@ -605,6 +608,25 @@ hr {
   }
   .footerContainer > h1 {
     padding: 0;
+  }
+  .footerContainer .footerText {
+    display: flex;
+    flex-direction: column;
+    max-width: 10vw;
+  }
+  .footerContainer .footerText > h1 {
+    margin-bottom: 2em;
+  }
+  .footerContainer .footerText > p {
+    margin-bottom: 1em;
+  }
+  .footerContainer .footerText > p .skillsFooterText {
+    color: rgb(0, 47, 82);
+    font-weight: 600;
+  }
+  .footerContainer .footerText .footerTextName {
+    color: rgb(0, 47, 82);
+    font-weight: 600;
   }
   .footerContainer .footer_list {
     display: block;

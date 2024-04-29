@@ -5,7 +5,13 @@ export default function Footer () {
             <footer className="footerContainer">
                 
             <h1 className="footer_title">Grupo Alura</h1>
-        <ul className="footer_list">
+            <div className="footerText">
+                <h1>Project Alura Books</h1>
+                <p>This project was developed to exercise responsiveness skills. Initially implemented solely using <span className="skillsFooterText">CSS</span> and <span className="skillsFooterText">HTML</span>, I opted to integrate <span className="skillsFooterText">SCSS</span> and <span className="skillsFooterText">React</span> as well. </p>
+                <p>Completion date: April 29, 2024.</p>
+                <p className="footerTextName">Armando Tavares</p>
+            </div>
+            <ul className="footer_list">
             <li className="footer_list_title">Educação</li>
             <li className="footer_list__item">
                 <img src="src/images/CasaDoCodigo.svg" alt="Logo da casa do código" />
