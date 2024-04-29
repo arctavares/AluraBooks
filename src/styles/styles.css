@@ -425,7 +425,7 @@ body {
 @media screen and (min-width: 1728px) {
   .mainCarouselContainer .carouselAndCardContainer {
     display: flex;
-    padding: 2em 3em;
+    padding: 5em 3em;
     align-items: center;
     flex-direction: row;
   }
