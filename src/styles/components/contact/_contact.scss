@@ -13,6 +13,7 @@
         & > h1 {
             font-weight: 500;
             font-size: 18px;
+            color: variables.$blue;
         }
         & > h2 {
             font-size: 16px;
@@ -37,5 +38,34 @@
         }
 
         
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .contactContainer {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 3em;
+        .contactTextContainer {
+            width: 25vw;
+            & > h1 {
+                font-size: 24px;
+            }
+            & > h2 {
+                font-size: 16px;
+            }
+        }
+        .inputContainer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 30vw;
+            height: 5vw;
+            & > img {
+                height: 20px;
+                margin-left: 20px;
+            }
+        }
     }
 }

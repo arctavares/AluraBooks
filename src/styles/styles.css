@@ -480,6 +480,7 @@ body {
 .contactContainer .contactTextContainer > h1 {
   font-weight: 500;
   font-size: 18px;
+  color: rgb(0, 47, 82);
 }
 .contactContainer .contactTextContainer > h2 {
   font-size: 16px;
@@ -506,6 +507,33 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 1024px) {
+  .contactContainer {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3em;
+  }
+  .contactContainer .contactTextContainer {
+    width: 25vw;
+  }
+  .contactContainer .contactTextContainer > h1 {
+    font-size: 24px;
+  }
+  .contactContainer .contactTextContainer > h2 {
+    font-size: 16px;
+  }
+  .contactContainer .inputContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30vw;
+    height: 5vw;
+  }
+  .contactContainer .inputContainer > img {
+    height: 20px;
+    margin-left: 20px;
+  }
+}
 hr {
   margin: 0;
 }
