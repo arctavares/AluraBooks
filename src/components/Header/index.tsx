@@ -45,9 +45,15 @@ export default function Header() {
                     <li className="optionsItem">MINHA ESTANTE</li>
                 </ul>
                 <div className="icons_container">
-                    <a href="#"><img src="src/images/Favoritos.svg" alt="Favoritos" /></a>
-                    <a href="#"><img src="src/images/Compras.svg" alt="Compras" /></a>
-                    <a href="#"><img src="src/images/Usuário.svg" alt="Usuario" /></a>
+                    <a href="#" className="favoriteIcon"><img src="src/images/Favoritos.svg" alt="Favoritos" /></a>
+                    <div className="iconContainer">
+                        <p className="iconTitle">Minha sacola</p>
+                        <a href="#"><img src="src/images/Compras.svg" alt="Compras" /></a>
+                    </div>
+                    <div className="iconContainer">
+                        <p className="iconTitle">Meu perfil</p>
+                        <a href="#"><img src="src/images/Usuário.svg" alt="Usuario" /></a>
+                    </div>
                 </div>
             </header>
         </>

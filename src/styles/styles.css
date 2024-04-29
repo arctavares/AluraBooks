@@ -146,6 +146,9 @@ body {
   display: flex;
   align-items: center;
 }
+.headerContainer .icons_container .iconTitle {
+  display: none;
+}
 .headerContainer .icons_container a {
   margin-right: 10px;
 }
@@ -203,6 +206,24 @@ body {
   }
   .headerContainer .menu_container .hamburger_container {
     display: none;
+  }
+}
+@media screen and (min-width: 1728px) {
+  .headerContainer .options {
+    justify-content: left;
+  }
+  .headerContainer .icons_container .favoriteIcon {
+    display: none;
+  }
+  .headerContainer .icons_container .iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-right: 2em;
+  }
+  .headerContainer .icons_container .iconContainer .iconTitle {
+    display: block;
   }
 }
 .bannerContainer {
