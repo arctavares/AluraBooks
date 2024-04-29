@@ -493,6 +493,22 @@ body {
     font-size: 24px;
   }
 }
+@media screen and (min-width: 1728px) {
+  .topicsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5em 0;
+  }
+  .topicsContainer .topicsTitle {
+    font-size: 32px;
+  }
+  .topicsContainer .topicsListContainer {
+    width: 60vw;
+    padding: 2em;
+  }
+}
 .contactContainer {
   display: flex;
   flex-direction: column;
