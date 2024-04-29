@@ -456,6 +456,17 @@ body {
   font-size: 14px;
 }
 
+@media screen and (min-width: 1024px) {
+  .topicsContainer .topicsTitle {
+    font-size: 24px;
+  }
+  .topicsContainer .topicsListContainer .topicsList .topicsItem {
+    margin: 2.5em 1em;
+  }
+  .topicsContainer .topicsListContainer .topicsList .topicsItem .topicsLink {
+    font-size: 24px;
+  }
+}
 .contactContainer {
   display: flex;
   flex-direction: column;
