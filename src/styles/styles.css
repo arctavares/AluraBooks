@@ -576,6 +576,11 @@ body {
     margin-left: 20px;
   }
 }
+@media screen and (min-width: 1728px) {
+  .contactContainer .inputContainer {
+    height: 3vw;
+  }
+}
 hr {
   margin: 0;
 }
