@@ -43,3 +43,22 @@
         width: 70%;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .bannerContainer {
+        .searchContainer {
+            width: 50vw;
+            .searchInput {
+                &::placeholder {
+                    font-size: 16px;
+                }
+            }
+        }
+        .bannerTitle {
+            font-size: 36px;
+        }
+        .bannerText {
+            font-size: 16px;
+        }
+    }
+}

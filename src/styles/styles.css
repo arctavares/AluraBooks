@@ -250,6 +250,23 @@ body {
   width: 70%;
 }
 
+@media screen and (min-width: 1024px) {
+  .bannerContainer .searchContainer {
+    width: 50vw;
+  }
+  .bannerContainer .searchContainer .searchInput::-moz-placeholder {
+    font-size: 16px;
+  }
+  .bannerContainer .searchContainer .searchInput::placeholder {
+    font-size: 16px;
+  }
+  .bannerContainer .bannerTitle {
+    font-size: 36px;
+  }
+  .bannerContainer .bannerText {
+    font-size: 16px;
+  }
+}
 .mainCarouselContainer .carouselTitle {
   display: flex;
   align-items: center;
