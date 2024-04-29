@@ -296,6 +296,7 @@ body {
   border-radius: 50%;
 }
 .mainCarouselContainer .carouselContainer .carouselImage {
+  padding: 0 1em;
   width: 33%;
 }
 .mainCarouselContainer .cardContainer {
@@ -357,6 +358,42 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
+  .mainCarouselContainer .carouselTitle {
+    font-size: 26px;
+  }
+  .mainCarouselContainer .carouselAndCardContainer {
+    display: flex;
+    padding: 2em 3em;
+    align-items: center;
+  }
+  .mainCarouselContainer .carouselAndCardContainer .carouselContainer {
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+  }
+  .mainCarouselContainer .carouselAndCardContainer .carouselContainer .carousel-item {
+    width: 60vw;
+  }
+  .mainCarouselContainer .carouselAndCardContainer .carouselContainer .carousel-item .carouselImage {
+    padding: 0 1em;
+  }
+  .mainCarouselContainer .carouselAndCardContainer .cardContainer .cardLeftSide .cardIcons {
+    text-align: left;
+  }
+  .mainCarouselContainer .carouselAndCardContainer .cardContainer .cardLeftSide .cardTextContent h2 {
+    font-size: 16px;
+  }
+  .mainCarouselContainer .carouselAndCardContainer .cardContainer .cardLeftSide .cardTextContent h1 {
+    font-size: 18px;
+  }
+  .mainCarouselContainer .carouselAndCardContainer .cardContainer .cardLeftSide .cardTextContent p {
+    font-size: 16px;
+  }
+  .cardContainer {
+    width: auto;
+  }
+}
+@media screen and (min-width: 1728px) {
   .mainCarouselContainer .carouselAndCardContainer {
     display: flex;
     padding: 2em 3em;

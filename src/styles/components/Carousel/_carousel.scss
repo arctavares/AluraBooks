@@ -34,6 +34,7 @@
             }
         }
         .carouselImage {
+            padding: 0 1em;
             width: 33%;
             
         }
@@ -100,6 +101,58 @@
 
 @media screen and (min-width: 1024px) {
     .mainCarouselContainer {
+        .carouselTitle {
+            font-size: 26px;
+        }
+        .carouselAndCardContainer {
+            display: flex;
+            padding: 2em 3em;
+            align-items: center;
+            .carouselContainer { 
+                width: 45vw;
+                display: flex;
+                justify-content: center;
+                .carousel-item {
+                    width: 60vw;
+                    .carouselImage {
+                        padding: 0 1em;
+                    }
+                }
+            }
+            .cardContainer {
+                .cardLeftSide {
+                    .cardIcons {
+                        text-align: left;
+                    }
+                    .cardTextContent {
+                        & h2 {
+                            font-size: 16px;
+                        }
+        
+                        & h1 {
+                            font-size: 18px;
+                        }
+        
+                        & p {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .cardContainer {
+        width: auto;
+    }
+    
+}
+
+
+// 1728px
+
+@media screen and (min-width: 1728px) {
+    .mainCarouselContainer {
         .carouselAndCardContainer {
             display: flex;
             padding: 2em 3em;
@@ -136,12 +189,9 @@
         }
     }
 
-
-
-    .cardContainer {    // solve bug on carrousel animation
-        // width: 45vw;
-        // min-width: 45vw;
+    .cardContainer {
         width: auto;
     }
     
 }
+
