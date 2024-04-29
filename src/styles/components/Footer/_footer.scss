@@ -11,4 +11,36 @@ hr {
         font-weight: 400;
         font-size: 16px;
     }
+    .footer_list {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .footerContainer {
+        display: flex;
+        justify-content: space-around;
+        padding: 3em 0;
+        & > h1 {
+            padding: 0;
+        }
+        .footer_list {
+            display: block;
+            .footer_list_title {
+                margin-bottom: 2em;
+            }
+            .footer_list__item {
+                margin-bottom: 1em;
+                display: flex;
+                align-items: center;
+                .footer_list__link {
+                    margin-left: 1em;
+                    text-decoration: none;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: variables.$light-gray;
+                }
+            }
+        }
+    }
 }

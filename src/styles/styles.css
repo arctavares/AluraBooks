@@ -545,4 +545,36 @@ hr {
   padding: 1em;
   font-weight: 400;
   font-size: 16px;
+}
+.footerContainer .footer_list {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .footerContainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 3em 0;
+  }
+  .footerContainer > h1 {
+    padding: 0;
+  }
+  .footerContainer .footer_list {
+    display: block;
+  }
+  .footerContainer .footer_list .footer_list_title {
+    margin-bottom: 2em;
+  }
+  .footerContainer .footer_list .footer_list__item {
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+  }
+  .footerContainer .footer_list .footer_list__item .footer_list__link {
+    margin-left: 1em;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(71, 70, 70);
+  }
 }/*# sourceMappingURL=styles.css.map */
