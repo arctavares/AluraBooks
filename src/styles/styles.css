@@ -611,6 +611,7 @@ hr {
   }
   .footerContainer .footer_list .footer_list_title {
     margin-bottom: 2em;
+    color: rgb(71, 70, 70);
   }
   .footerContainer .footer_list .footer_list__item {
     margin-bottom: 1em;
@@ -623,5 +624,14 @@ hr {
     font-weight: 400;
     font-size: 14px;
     color: rgb(71, 70, 70);
+  }
+}
+@media screen and (min-width: 1728px) {
+  .footerContainer > h1 {
+    font-size: 24px;
+  }
+  .footerContainer .footer_list {
+    border-left: 1px solid rgb(71, 70, 70);
+    padding-left: 20px;
   }
 }/*# sourceMappingURL=styles.css.map */

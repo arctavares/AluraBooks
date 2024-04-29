@@ -28,6 +28,7 @@ hr {
             display: block;
             .footer_list_title {
                 margin-bottom: 2em;
+                color: variables.$light-gray;
             }
             .footer_list__item {
                 margin-bottom: 1em;
@@ -41,6 +42,19 @@ hr {
                     color: variables.$light-gray;
                 }
             }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1728px) {
+    .footerContainer {
+        & > h1 {
+            font-size: 24px;
+        }
+        .footer_list {
+            border-left: 1px solid variables.$light-gray;
+            padding-left: 20px;
         }
     }
 }
