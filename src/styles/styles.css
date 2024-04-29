@@ -187,7 +187,10 @@ body {
     width: 200px;
   }
   .headerContainer .options .menuOptionsContainer > li:hover {
-    background-color: blue;
+    background-color: rgb(0, 47, 82);
+  }
+  .headerContainer .options .menuOptionsContainer > li:hover .categories_link {
+    -webkit-text-fill-color: white;
   }
   .headerContainer .menu_container .headerTitle {
     display: block;

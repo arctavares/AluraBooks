@@ -135,7 +135,10 @@
         .menuOptionsContainer {
           width: 200px;
           & > li:hover {
-            background-color: blue;
+            background-color: variables.$blue;
+            .categories_link{
+              -webkit-text-fill-color: variables.$white;
+            }
           }
         }
       }
